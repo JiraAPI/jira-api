@@ -1,0 +1,24 @@
+#!/bin/bash
+
+HOST=https://jira-api.atlassian.net
+URL=${HOST}/rest/api/latest/issue/createmeta
+URL=${HOST}/rest/api/2/issue/createmeta
+
+pushd . > /dev/null
+cd ../..
+
+# TOKEN is Base64 encoded:   $user:$password, ref bin/jira/gen-token
+TOKEN=`cat ./.token`
+printf "TOKEN=${TOKEN}"
+LOG=logs/create-meta-auth-header.json
+
+# --
+# this does not work, gives empty doc
+curl -H "Authorization: ${TOKEN}" \
+  -X GET -H "Content-Type: application/json" \
+  ${URL} | tee -a ${LOG}
+
+popd > /dev/null
+
+# this returns:   {"expand":"projects","projects":[]}
+# there are no projects listed, but I have two

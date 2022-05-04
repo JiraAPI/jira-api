@@ -1,0 +1,1 @@
+https://developer.atlassian.com/server/jira/platform/oauth

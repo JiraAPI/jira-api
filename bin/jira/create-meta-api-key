@@ -1,0 +1,25 @@
+#!/bin/bash
+
+pushd . > /dev/null
+cd ../..
+
+# --
+USER=`cat ./.user`
+API_KEY=`cat ./.api-key`
+AUTH=${USER}:${API_KEY}
+
+# --
+HOST=`cat ./.host`
+URL=${HOST}/rest/api/latest/issue/createmeta
+URL=${HOST}/rest/api/2/issue/createmeta
+
+# --
+LOG=logs/create-meta-api-key.json
+
+# --
+curl --user ${AUTH} \
+  -X GET -H "Content-Type: application/json" \
+  ${URL} | tee ${LOG}
+  # ${URL} | tee file.json
+
+popd > /dev/null

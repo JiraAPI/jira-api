@@ -1,0 +1,177 @@
+{
+  "expand": "projects",
+  "projects": [
+    {
+      "self": "https://jira-api.atlassian.net/rest/api/2/project/10001",
+      "id": "10001",
+      "key": "ITSAMPLE",
+      "name": "ITSM sample space",
+      "avatarUrls": {
+        "48x48": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422",
+        "24x24": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=small",
+        "16x16": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=xsmall",
+        "32x32": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10422?size=medium"
+      },
+      "issuetypes": [
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10007",
+          "id": "10007",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10557?size=medium",
+          "name": "Task",
+          "untranslatedName": "Task",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "A request that follows ITSM workflows.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10553?size=medium",
+          "name": "[System] Service request",
+          "untranslatedName": "[System] Service request",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10008",
+          "id": "10008",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10558?size=medium",
+          "name": "Sub-task",
+          "untranslatedName": "Sub-task",
+          "subtask": true
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10001",
+          "id": "10001",
+          "description": "For system outages or incidents. Created by Jira Service Management.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10551?size=medium",
+          "name": "[System] Incident",
+          "untranslatedName": "[System] Incident",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10006",
+          "id": "10006",
+          "description": "Track underlying causes of incidents. Created by Jira Service Management.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10556?size=medium",
+          "name": "[System] Problem",
+          "untranslatedName": "[System] Problem",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10005",
+          "id": "10005",
+          "description": "Created by Jira Service Management.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10555?size=medium",
+          "name": "[System] Change",
+          "untranslatedName": "[System] Change",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "Document and share incident learning.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10552?size=medium",
+          "name": "[System] Post-incident review",
+          "untranslatedName": "[System] Post-incident review",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10004",
+          "id": "10004",
+          "description": "A request that follows ITSM workflows.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10554?size=medium",
+          "name": "[System] Service request with approvals",
+          "untranslatedName": "[System] Service request with approvals",
+          "subtask": false
+        }
+      ]
+    },
+    {
+      "self": "https://jira-api.atlassian.net/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "RUM",
+      "name": "RUM",
+      "avatarUrls": {
+        "48x48": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10424",
+        "24x24": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10424?size=small",
+        "16x16": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10424?size=xsmall",
+        "32x32": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10424?size=medium"
+      },
+      "issuetypes": [
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10007",
+          "id": "10007",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10557?size=medium",
+          "name": "Task",
+          "untranslatedName": "Task",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "A request that follows ITSM workflows.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10553?size=medium",
+          "name": "[System] Service request",
+          "untranslatedName": "[System] Service request",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10008",
+          "id": "10008",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10558?size=medium",
+          "name": "Sub-task",
+          "untranslatedName": "Sub-task",
+          "subtask": true
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10001",
+          "id": "10001",
+          "description": "For system outages or incidents. Created by Jira Service Management.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10551?size=medium",
+          "name": "[System] Incident",
+          "untranslatedName": "[System] Incident",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10006",
+          "id": "10006",
+          "description": "Track underlying causes of incidents. Created by Jira Service Management.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10556?size=medium",
+          "name": "[System] Problem",
+          "untranslatedName": "[System] Problem",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10005",
+          "id": "10005",
+          "description": "Created by Jira Service Management.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10555?size=medium",
+          "name": "[System] Change",
+          "untranslatedName": "[System] Change",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "Document and share incident learning.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10552?size=medium",
+          "name": "[System] Post-incident review",
+          "untranslatedName": "[System] Post-incident review",
+          "subtask": false
+        },
+        {
+          "self": "https://jira-api.atlassian.net/rest/api/2/issuetype/10004",
+          "id": "10004",
+          "description": "A request that follows ITSM workflows.",
+          "iconUrl": "https://jira-api.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10554?size=medium",
+          "name": "[System] Service request with approvals",
+          "untranslatedName": "[System] Service request with approvals",
+          "subtask": false
+        }
+      ]
+    }
+  ]
+}

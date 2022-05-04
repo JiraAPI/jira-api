@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# generates a token from username + password
+
+pushd . > /dev/null
+cd ../..
+
+PASSWORD=`cat ./.password`
+USER=`cat ./.user`
+echo -n ${USER}:${PASSWORD} | base64 | tee .token
+
+popd > /dev/null
