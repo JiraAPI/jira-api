@@ -1,0 +1,21 @@
+#!/bin/bash
+# I have no understanding why this does not work
+
+source ./set-jira-params
+pushd . > /dev/null
+cd ..
+
+# --
+URL=${JIRA_HOST}/rest/api/2/issue/createmeta
+LOG=logs/create-meta.json
+rm -f ${LOG}
+
+#--user ${JIRA_USER_API_TOKEN} \
+curl \
+   -D- \
+   -X GET \
+    --user ${JIRA_USER}:${JIRA_API_TOKEN} \
+   -H "Content-Type: application/json" \
+   ${URL} | tee ${LOG}
+
+popd > /dev/null
