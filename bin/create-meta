@@ -1,5 +1,7 @@
 #!/bin/bash
-# I have no understanding why this does not work
+# this will not work when only Service Desk is in use
+# it only works against Jira Software, not service desk
+# use a service desk api
 
 source ./set-jira-params
 pushd . > /dev/null
