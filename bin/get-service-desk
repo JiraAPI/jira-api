@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script is useful to get service_desk_id
 
-source ./set-jira-params
+source ./set-jira-params  # this will set the API token, it reads:   config/dev.ini
 pushd . > /dev/null
 cd ..
 
