@@ -1,0 +1,21 @@
+#!/bin/bash
+# This script is useful to get service_desk_id
+
+source ./set-jira-params
+pushd . > /dev/null
+cd ..
+
+URL=${JIRA_HOST}/rest/servicedeskapi/servicedesk
+LOG=logs/service-desk-info.json
+rm -f ${LOG}
+
+# ---
+# -H "X-ExperimentalApi: opt-in" \
+curl \
+   -D- \
+   -X GET \
+   -H "Content-Type: application/json" \
+   --user ${JIRA_USER_API_TOKEN} \
+   ${URL} | tee ${LOG}
+
+popd > /dev/null
