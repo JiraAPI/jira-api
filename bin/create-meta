@@ -3,6 +3,10 @@
 # it only works against Jira Software, not service desk
 # use a service desk api
 
+# the only usefulness of this script is that it gives you two things:
+# 1. the service desk: 'project_id'
+# 2. the service desk: 'project_key'
+# which is not the same as the 'service desk: service_desk_id
 source ./set-jira-params
 pushd . > /dev/null
 cd ..
