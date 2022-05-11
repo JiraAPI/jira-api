@@ -9,8 +9,9 @@ class JiraServiceDesk(object):
     When running this, the top level project directory has to be the base working directory,
     as it needs to find 'config/dev.ini' relative to there to get API keys.
 
-    <path>/jira-service-desk-api/ has to be the base working directory
+    <path>/jira-api/ has to be the base working directory
 
+    $cd jira-api
     $python src/test/service-desk/get_service_desk_info.py
     """
 
