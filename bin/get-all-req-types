@@ -1,4 +1,6 @@
 #!/bin/bash
+# https://developer.atlassian.com/cloud/jira/service-desk/rest/api-group-servicedesk
+# /api-rest-servicedeskapi-servicedesk-servicedeskid-requesttype-get
 # This script is useful to get:
 # 1. service_desk_id
 # 2. service desk issue_type_id associated with custom request_type
