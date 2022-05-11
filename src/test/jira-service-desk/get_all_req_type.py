@@ -81,8 +81,8 @@ class JiraServiceDesk(object):
 
         # errors:
         # Basic:    Basic authentication with passwords is deprecated. (I'm not using a password)
-        # Bearer:   {"message": "Client must be authenticated to access this resource.",
-        # "status-code": 401}
+        # Bearer:   {"message": "Client must be authenticated to access this resource.
+        # status-code": 401}
 
     def get_all_req_type(self):
         url = self.jira_host + '/rest/servicedeskapi/requesttype'
@@ -92,7 +92,7 @@ class JiraServiceDesk(object):
         print(r.text)
 
     def main(self):
-        self.init()  # read and inspect Jira ID's needed for JSON payload
+        self.init()  # read all params from dev.ini
         self.get_all_req_type()
 
 
