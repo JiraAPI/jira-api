@@ -21,7 +21,6 @@ LOG=logs/get-all-req-types.json
 rm -f ${LOG}
 
 # ---
-printf "${JIRA_USER_API_TOKEN}"
 curl \
   -D- \
   -X GET \
