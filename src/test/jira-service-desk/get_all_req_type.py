@@ -73,7 +73,7 @@ class JiraServiceDesk(object):
         }
         return headers
 
-        # the following Authorization methods do not work
+        # the following Authorization methods **do NOT work**
         # 'Authorization': 'Bearer ' + self.jira_base64_user_api_token  | Base64Encoded(user:api_token)
         # 'Authorization': 'Basic ' + self.jira_base64_user_api_token   | Base64Encoded(user:api_token)
         # 'Authorization': 'Basic ' + self.jira_user_api_token          | user:api_token
