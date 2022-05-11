@@ -67,18 +67,22 @@ class JiraServiceDesk(object):
         headers = {
             'User-Agent': 'python-requests',
             'X-ExperimentalApi': 'opt-in',
-            'Authorization': 'Bearer ' + self.jira_base64_user_api_token,
+            'Authorization': 'Basic ' + self.jira_user_api_token,
             'Content-Type': accept_content_type,
             'Accept': accept_content_type
         }
         return headers
-        # 'X-ExperimentalApi': 'opt-in',
 
         # the following Authorization methods do not work
-        # 'Authorization': 'Bearer ' + self.jira_base64_user_api_token,
-        # 'Authorization': 'Basic ' + self.jira_base64_user_api_token,
-        # 'Authorization': 'Basic ' + self.jira_user_api_token,
-        # 'Authorization': 'Bearer ' + self.jira_user_api_token,
+        # 'Authorization': 'Bearer ' + self.jira_base64_user_api_token  | Base64Encoded(user:token)
+        # 'Authorization': 'Basic ' + self.jira_base64_user_api_token   | Base64Encoded(user:token)
+        # 'Authorization': 'Basic ' + self.jira_user_api_token          | user:api_token
+        # 'Authorization': 'Bearer ' + self.jira_user_api_token         | user:api_token
+
+        # errors:
+        # Basic:    Basic authentication with passwords is deprecated. (I'm not using a password)
+        # Bearer:   {"message": "Client must be authenticated to access this resource.",
+        # "status-code": 401}
 
     def get_all_req_type(self):
         url = self.jira_host + '/rest/servicedeskapi/requesttype'
